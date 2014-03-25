@@ -51,13 +51,19 @@ from Bio.SeqRecord import SeqRecord
 simple_seq_r = SeqRecord(simple_seq)
 simple_seq_r.id
 ```
-The id is not set for the seq. You can see what values have been created for rhge SeqRecord function:
+
+Note the output:
+```python
+'<unknown id>'
+```
+The id is not set for the sequence record. You can see a summary of what values have been created for the SeqRecord function:
 ```python
 print simple_seq_r
 ```
 **Try this**  
 Add more information to the `simple_seq_r` record.
 
+###Fasta
 
 However usually, you would obtain a SeqRecord object by reading in a file, such as fasta file.
 http://en.wikipedia.org/wiki/FASTA_format
