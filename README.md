@@ -14,13 +14,13 @@ http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec17
 ###SeqRecord objects
 http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec32
 
-The SeqRecord class is a more sophisticated way to represent a sequence. It has a number of attributes, but the most useful are usually:
-.seq
-– The sequence itself, typically a Seq object.
-.id
-– The primary ID used to identify the sequence – a string. In most cases this is something like an accession number.
+The SeqRecord class is a more sophisticated way to represent a sequence. It has a number of attributes, but the most useful are usually:  
+.seq  
+– The sequence itself, typically a Seq object.  
+.id  
+– The primary ID used to identify the sequence – a string. In most cases this is something like an accession number.  
 
-You can create a SeqRecord object by hand like this:
+You can create a SeqRecord object by hand like this:  
 
 
 
