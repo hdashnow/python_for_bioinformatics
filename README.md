@@ -79,9 +79,22 @@ for record in SeqIO.parse("example.fasta", "fasta") :
 For writing records to a file use the function Bio.SeqIO.write(), which takes a SeqRecord iterator (or list of SeqRecords), output handle (or filename) and a format string:
 
 ```python
+from Bio.Seq import Seq
+from Bio.Alphabet import IUPAC
+from Bio.SeqRecord import SeqRecord
 from Bio import SeqIO
+
+# Create some Seq objects
+seq1 = Seq("GATCAGATTA", IUPAC.unambiguous_dna)
+seq2 = Seq("GTGCAGTATA", IUPAC.unambiguous_dna)
+
+# Put them into SeqRecord objects
+record1 = SeqRecord(seq1, id="Sequence 1")
+record2 = SeqRecord(seq2, id="Sequence 2")
+
+# Write the SeqRecords to a fasta file
 list_of_SeqRecords = [record1, record2]
-SeqIO.write(list_of_SeqRecords, "example.fasta", "fasta")
+SeqIO.write(list_of_SeqRecords, "example_output.fasta", "fasta")
 ```
 
 **Try these**  
