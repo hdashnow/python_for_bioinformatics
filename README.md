@@ -134,4 +134,5 @@ And just in case you ever need to read a BAM file or write a pipeline:
 * http://www.vlsci.org.au/
 * http://parkville-bioinformatics-journal-club.blogspot.com.au/
 * https://www.facebook.com/groups/BGSA.melbourne/
-
+* http://australianbioinformatics.net/
+* http://www.iscb.org/
