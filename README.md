@@ -86,16 +86,17 @@ SeqIO.write(list_of_SeqRecords, "example.fasta", "fasta")
 
 **Try these**  
 
-resistance_sample.fasta contains 10 genes known to cause resistance to anibiotics in bacteria  
+[resistance_sample.fasta](resistance_sample.fasta) contains 10 genes known to cause resistance to anibiotics in bacteria  
 Write a script that prints the id of every sequence in this file. Then edit it so that it also prints the GC content of each sequence (the proportion of bases that are G or C).  
 Note: you can treat a Seq object like a string and maniplate it in the ususal ways.  
 
 resistance.fasta contains the full set of bacterial resistance genes.  
-Write a script that reads this file, then writes a new fasta file containing only those sequences with "blaOXA" in the file name (there should be 202). If you get stuck, the solution is in read_fasta.py.
+Write a script that reads this file, then writes a new fasta file containing only those sequences with "blaOXA" in the file name (there should be 202). If you get stuck, the solution is in [read_fasta.py](read_fasta.py).
 
 
 ####Want more Bioinformatics problems? Try these resources:
 * http://rosalind.info/
 * http://biopython.org/DIST/docs/tutorial/Tutorial.html
+
 And just in case you ever need to read a BAM file:  
 * http://pysam.readthedocs.org/en/latest/
