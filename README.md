@@ -3,15 +3,29 @@ Python for Bioinformatics
 
 Some examples of using Python for Bioinformatics
 
-BioPython
+Biopython
 ---------
 
 ###Sequence objects
 http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec17
 
-Find the reverse complement of this sequence:  
-ACAAGATGCCATTGTCCCCCGGCCTCCTG
+    from Bio.Seq import Seq
+    my_seq = Seq("AGTACACTGGT")
 
+However, Biopython doesn't know if your sequence is DNA. Seq objects can be DNA, RNA or protein. We can use the IUPAC standards to define what kind of sequence this is.
+
+    from Bio.Seq import Seq
+    from Bio.Alphabet import IUPAC
+    my_seq = Seq("AGTACACTGGT", IUPAC.unambiguous_dna)
+
+Now that Biopython knows we are dealing with DNA, you can use some handy functions:  
+.complement()  
+.reverse_complement()  
+.transcribe()  
+...and many more.  
+
+Find the reverse complement of this sequence:  
+ACAAGATGCCATTGTCCCCCGGCCTCCTG  
 
 ###SeqRecord objects
 http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec32
@@ -28,9 +42,9 @@ You can create a SeqRecord object by hand like this:
     simple_seq = Seq("GATC")
     from Bio.SeqRecord import SeqRecord
     simple_seq_r = SeqRecord(simple_seq)
-    simple_seq_r.id`
+    simple_seq_r.id
 
-
+**Try this**  
 
 However usually, you would obtain a SeqRecord object by reading in a file, such as fasta file.
 http://en.wikipedia.org/wiki/FASTA_format
