@@ -63,16 +63,23 @@ http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec51
 
 Bio.SeqIO.parse() takes a file handle (or filename) and format string, and returns a SeqRecord iterator.
 
-        from Bio import SeqIO
-        for record in SeqIO.parse("example.fasta", "fasta") :
-            print record.id
+    from Bio import SeqIO
+    for record in SeqIO.parse("example.fasta", "fasta") :
+        print record.id
 
 For writing records to a file use the function Bio.SeqIO.write(), which takes a SeqRecord iterator (or list of SeqRecords), output handle (or filename) and a format string:
 
-        from Bio import SeqIO
-        list_of_SeqRecords = [record1, record2]
-        SeqIO.write(list_of_SeqRecords, "example.fasta", "fasta")
+    from Bio import SeqIO
+    list_of_SeqRecords = [record1, record2]
+    SeqIO.write(list_of_SeqRecords, "example.fasta", "fasta")
 
+**Try this** 
+resistance_sample.fasta contains 10 genes known to cause resistance to anibiotics in bacteria  
+Write a script that prints the id of every sequence in this file. Then edit it so that it also prints the GC content of each sequence (the proportion of bases that are G or C).  
+Note: you can treat a Seq object like a string and maniplate it in the using ways.
+
+resistance.fasta contains the full set of bacterial resistance genes.
+Write a script that 
 
 
 ####Resources:
