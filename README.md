@@ -112,7 +112,7 @@ SeqIO.write(list_of_SeqRecords, "example_output.fasta", "fasta")
 
 **Try these**  
 
-[resistance_sample.fasta](resistance_sample.fasta) contains 10 genes known to cause resistance to antibiotics in bacteria  
+[resistance_sample.fasta](https://raw.githubusercontent.com/hdashnow/python_for_bioinformatics/master/resistance_sample.fasta) contains 10 genes known to cause resistance to antibiotics in bacteria  
 Write a script that prints the id of every sequence in this file. Then edit it so that it also prints the GC content of each sequence (the proportion of bases that are G or C).  
 Note: you can treat a Seq object like a string and maniplate it in the ususal ways.  
 
