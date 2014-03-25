@@ -120,7 +120,7 @@ Note: you can treat a Seq object like a string and maniplate it in the ususal wa
 Write a script that reads this file, then writes a new fasta file containing only those sequences with "blaOXA" in the file name (there should be 202). If you get stuck, the solution is in [read_fasta.py](read_fasta.py).
 
 
-####Want more Bioinformatics problems? Try these resources:
+####Want more bioinformatics problems? Try these resources:
 * http://rosalind.info/
 * http://biopython.org/DIST/docs/tutorial/Tutorial.html
 
@@ -128,7 +128,7 @@ And just in case you ever need to read a BAM file:
 * http://pysam.readthedocs.org/en/latest/
 
 
-####Want more Bioinformatics?
+####So you want to be a bioinformatician? Stay informed and get involved!
 * http://combine.org.au/
 * http://www.vlsci.org.au/
 * http://parkville-bioinformatics-journal-club.blogspot.com.au/
