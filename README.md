@@ -73,18 +73,18 @@ For writing records to a file use the function Bio.SeqIO.write(), which takes a 
     list_of_SeqRecords = [record1, record2]
     SeqIO.write(list_of_SeqRecords, "example.fasta", "fasta")
 
-**Try this** 
+**Try these**  
+
 resistance_sample.fasta contains 10 genes known to cause resistance to anibiotics in bacteria  
 Write a script that prints the id of every sequence in this file. Then edit it so that it also prints the GC content of each sequence (the proportion of bases that are G or C).  
-Note: you can treat a Seq object like a string and maniplate it in the using ways.
+Note: you can treat a Seq object like a string and maniplate it in the ususal ways.  
 
-resistance.fasta contains the full set of bacterial resistance genes.
-Write a script that 
+resistance.fasta contains the full set of bacterial resistance genes.  
+Write a script that reads this file, then writes a new fasta file containing only those sequences with "blaOXA" in the file name (there should be 202).
 
 
-####Resources:
+####Want more Bioinformatics problems? Try these resources:
 * http://rosalind.info/
 * http://biopython.org/DIST/docs/tutorial/Tutorial.html
-
-####Advanced resources:
+And just in case you ever need to read a BAM file:  
 * http://pysam.readthedocs.org/en/latest/
