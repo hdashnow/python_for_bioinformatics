@@ -9,20 +9,25 @@ Biopython
 ###Sequence objects
 http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec17
 
-    from Bio.Seq import Seq
-    my_seq = Seq("AGTACACTGGT")
+```python
+from Bio.Seq import Seq
+my_seq = Seq("AGTACACTGGT")
+```
 
 However, Biopython doesn't know if your sequence is DNA. Seq objects can be DNA, RNA or protein. We can use the IUPAC standards to define what kind of sequence this is.
 
-    from Bio.Seq import Seq
-    from Bio.Alphabet import IUPAC
-    my_seq = Seq("AGTACACTGGT", IUPAC.unambiguous_dna)
+```python
+from Bio.Seq import Seq
+from Bio.Alphabet import IUPAC
+my_seq = Seq("AGTACACTGGT", IUPAC.unambiguous_dna)
+```
 
 Now that Biopython knows we are dealing with DNA, you can use some handy functions:  
-`.complement()`
-`.reverse_complement()`  
-`.transcribe()`  
-...and many more.  
+ - `.complement()`
+ - `.reverse_complement()`
+ - `.transcribe()`  
+
+And many more.  
 
 **Try this**  
 Find the reverse complement of this sequence:  
@@ -39,11 +44,13 @@ The SeqRecord class is a more sophisticated way to represent a sequence. It has 
 
 You can create a SeqRecord object by hand like this:  
   
-    from Bio.Seq import Seq
-    simple_seq = Seq("GATC")
-    from Bio.SeqRecord import SeqRecord
-    simple_seq_r = SeqRecord(simple_seq)
-    simple_seq_r.id
+```python
+from Bio.Seq import Seq
+simple_seq = Seq("GATC")
+from Bio.SeqRecord import SeqRecord
+simple_seq_r = SeqRecord(simple_seq)
+simple_seq_r.id
+```
 
 However usually, you would obtain a SeqRecord object by reading in a file, such as fasta file.
 http://en.wikipedia.org/wiki/FASTA_format
@@ -63,15 +70,19 @@ http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec51
 
 Bio.SeqIO.parse() takes a file handle (or filename) and format string, and returns a SeqRecord iterator.
 
-    from Bio import SeqIO
-    for record in SeqIO.parse("example.fasta", "fasta") :
-        print record.id
+```python
+from Bio import SeqIO
+for record in SeqIO.parse("example.fasta", "fasta") :
+    print record.id
+```
 
 For writing records to a file use the function Bio.SeqIO.write(), which takes a SeqRecord iterator (or list of SeqRecords), output handle (or filename) and a format string:
 
-    from Bio import SeqIO
-    list_of_SeqRecords = [record1, record2]
-    SeqIO.write(list_of_SeqRecords, "example.fasta", "fasta")
+```python
+from Bio import SeqIO
+list_of_SeqRecords = [record1, record2]
+SeqIO.write(list_of_SeqRecords, "example.fasta", "fasta")
+```
 
 **Try these**  
 
