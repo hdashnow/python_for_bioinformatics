@@ -49,7 +49,7 @@ from Bio.Seq import Seq
 simple_seq = Seq("GATC")
 from Bio.SeqRecord import SeqRecord
 simple_seq_r = SeqRecord(simple_seq)
-simple_seq_r.id
+print simple_seq_r.id
 ```
 
 Note the output:
