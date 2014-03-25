@@ -24,6 +24,7 @@ Now that Biopython knows we are dealing with DNA, you can use some handy functio
 .transcribe()  
 ...and many more.  
 
+**Try this**  
 Find the reverse complement of this sequence:  
 ACAAGATGCCATTGTCCCCCGGCCTCCTG  
 
@@ -44,8 +45,6 @@ You can create a SeqRecord object by hand like this:
     simple_seq_r = SeqRecord(simple_seq)
     simple_seq_r.id
 
-**Try this**  
-
 However usually, you would obtain a SeqRecord object by reading in a file, such as fasta file.
 http://en.wikipedia.org/wiki/FASTA_format
 
@@ -61,6 +60,20 @@ TTTAATTACAGACCTGAA
 
 ###Reading and writing sequencing files
 http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec51
+
+Bio.SeqIO.parse() takes a file handle (or filename) and format string, and returns a SeqRecord iterator.
+
+        from Bio import SeqIO
+        for record in SeqIO.parse("example.fasta", "fasta") :
+            print record.id
+
+For writing records to a file use the function Bio.SeqIO.write(), which takes a SeqRecord iterator (or list of SeqRecords), output handle (or filename) and a format string:
+
+        from Bio import SeqIO
+        list_of_SeqRecords = [record1, record2]
+        SeqIO.write(list_of_SeqRecords, "example.fasta", "fasta")
+
+
 
 ####Resources:
 * http://rosalind.info/
