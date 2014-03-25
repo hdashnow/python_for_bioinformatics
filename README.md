@@ -126,3 +126,11 @@ Write a script that reads this file, then writes a new fasta file containing onl
 
 And just in case you ever need to read a BAM file:  
 * http://pysam.readthedocs.org/en/latest/
+
+
+####Want more Bioinformatics?
+* http://combine.org.au/
+* http://www.vlsci.org.au/
+* http://parkville-bioinformatics-journal-club.blogspot.com.au/
+* https://www.facebook.com/groups/BGSA.melbourne/
+
