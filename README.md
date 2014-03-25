@@ -23,6 +23,12 @@ The SeqRecord class is a more sophisticated way to represent a sequence. It has 
 – The primary ID used to identify the sequence – a string. In most cases this is something like an accession number.  
 
 You can create a SeqRecord object by hand like this:  
+  
+    from Bio.Seq import Seq
+    simple_seq = Seq("GATC")
+    from Bio.SeqRecord import SeqRecord
+    simple_seq_r = SeqRecord(simple_seq)
+    simple_seq_r.id`
 
 
 
