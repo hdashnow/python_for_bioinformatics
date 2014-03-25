@@ -81,7 +81,7 @@ Here is an example DNA sequence in FASTA format:
 ###Reading and writing sequencing files
 http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec51
 
-Bio.SeqIO.parse() takes a file handle (or filename) and format string, and returns a SeqRecord iterator.
+Bio.SeqIO.parse() takes a file handle (or filename) and format string, and returns a SeqRecord iterator. You can try this with the [example.fasta](https://raw.githubusercontent.com/hdashnow/python_for_bioinformatics/master/example.fasta) file.
 
 ```python
 from Bio import SeqIO
@@ -112,11 +112,11 @@ SeqIO.write(list_of_SeqRecords, "example_output.fasta", "fasta")
 
 **Try these**  
 
-[resistance_sample.fasta](resistance_sample.fasta) contains 10 genes known to cause resistance to anibiotics in bacteria  
+[resistance_sample.fasta](https://raw.githubusercontent.com/hdashnow/python_for_bioinformatics/master/resistance_sample.fasta) contains 10 genes known to cause resistance to anibiotics in bacteria  
 Write a script that prints the id of every sequence in this file. Then edit it so that it also prints the GC content of each sequence (the proportion of bases that are G or C).  
 Note: you can treat a Seq object like a string and maniplate it in the ususal ways.  
 
-[resistance.fasta](resistance.fasta) contains the full set of bacterial resistance genes.  
+[resistance.fasta](https://raw.githubusercontent.com/hdashnow/python_for_bioinformatics/master/resistance.fasta) contains the full set of bacterial resistance genes.  
 Write a script that reads this file, then writes a new fasta file containing only those sequences with "blaOXA" in the file name (there should be 202). If you get stuck, the solution is in [read_fasta.py](read_fasta.py).
 
 
@@ -124,8 +124,9 @@ Write a script that reads this file, then writes a new fasta file containing onl
 * http://rosalind.info/
 * http://biopython.org/DIST/docs/tutorial/Tutorial.html
 
-And just in case you ever need to read a BAM file:  
+And just in case you ever need to read a BAM file or write a pipeline:  
 * http://pysam.readthedocs.org/en/latest/
+* https://code.google.com/p/bpipe/
 
 
 ####So you want to be a bioinformatician? Stay informed and get involved!
