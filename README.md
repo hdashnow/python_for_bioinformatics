@@ -9,6 +9,8 @@ BioPython
 ###Sequence objects
 http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec17
 
+Find the reverse complement of this sequence:  
+ACAAGATGCCATTGTCCCCCGGCCTCCTG
 
 
 ###SeqRecord objects
@@ -27,9 +29,9 @@ You can create a SeqRecord object by hand like this:
 However usually, you would obtain a SeqRecord object by reading in a file, such as fasta file.
 http://en.wikipedia.org/wiki/FASTA_format
 
-An example sequence in FASTA format is:
+Here is an example DNA sequence in FASTA format:
 
->AB000263 |acc=AB000263|descr=Homo sapiens mRNA for prepro cortistatin like peptide, complete cds.|len=368
+\>AB000263 |acc=AB000263|descr=Homo sapiens mRNA for prepro cortistatin like peptide, complete cds.|len=368
 ACAAGATGCCATTGTCCCCCGGCCTCCTGCTGCTGCTGCTCTCCGGGGCCACGGCCACCGCTGCCCTGCC
 CCTGGAGGGTGGCCCCACCGGCCGAGACAGCGAGCATATGCAGGAAGCGGCAGGAATAAGGAAAAGCAGC
 CTCCTGACTTTCCTCGCTTGGTGGTTTGAGTGGACCTCCCAGGCCAGTGCCGGGCCCCTCATAGGAGAGG
