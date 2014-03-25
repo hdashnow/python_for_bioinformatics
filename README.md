@@ -80,7 +80,7 @@ Write a script that prints the id of every sequence in this file. Then edit it s
 Note: you can treat a Seq object like a string and maniplate it in the ususal ways.  
 
 resistance.fasta contains the full set of bacterial resistance genes.  
-Write a script that reads this file, then writes a new fasta file containing only those sequences with "blaOXA" in the file name (there should be 202).
+Write a script that reads this file, then writes a new fasta file containing only those sequences with "blaOXA" in the file name (there should be 202). If you get stuck, the solution is in read_fasta.py.
 
 
 ####Want more Bioinformatics problems? Try these resources:
