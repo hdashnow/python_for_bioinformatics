@@ -90,7 +90,7 @@ SeqIO.write(list_of_SeqRecords, "example.fasta", "fasta")
 Write a script that prints the id of every sequence in this file. Then edit it so that it also prints the GC content of each sequence (the proportion of bases that are G or C).  
 Note: you can treat a Seq object like a string and maniplate it in the ususal ways.  
 
-resistance.fasta contains the full set of bacterial resistance genes.  
+[resistance.fasta](resistance.fasta) contains the full set of bacterial resistance genes.  
 Write a script that reads this file, then writes a new fasta file containing only those sequences with "blaOXA" in the file name (there should be 202). If you get stuck, the solution is in [read_fasta.py](read_fasta.py).
 
 
