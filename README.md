@@ -2,6 +2,7 @@ Python for Bioinformatics
 =========================
 
 Some examples of using Python for Bioinformatics
+To get the data go to your shell and type "git clone https://github.com/hdashnow/python_for_bioinformatics.git"
 
 Biopython
 ---------
